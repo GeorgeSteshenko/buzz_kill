@@ -1,0 +1,184 @@
+body {
+  text-align: center;
+  background: {
+    image: image-url('honeycomb-bg.jpg');
+    repeat: repeat;
+    position: 50% 50%;
+  }
+}
+
+// Playing area
+.play-ground {
+  width: 740px;
+  height: 600px;
+  margin: 30px auto;
+  border: 4px solid $deep-sea;
+  padding: 30px;
+  text-align: left;
+  @include background-image(linear-gradient(top,  rgba(0,132,97,0.95) 0%,rgba(241,218,54,0.80) 100%));
+}
+
+// Main action block
+.play-screen {
+  float: left;
+  width: 450px;
+  height: 592px;
+  border: 4px solid $turquoise;
+  background-color: $mine-shaft;
+  text-align: center;
+  overflow: hidden;
+}
+
+// Global wrapper
+.wrapper {
+  padding: 5px;
+}
+
+// Main bee styles
+.bee,
+.bee-map {
+  position: relative;
+  display: inline-block;
+  margin: 0 8px;
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+  overflow: hidden;
+
+  background: {
+    image: image-url('bee.gif');
+    repeat: no-repeat;
+    position: 0 0;
+  }
+  
+  &:before {
+    content: 'Health: ';
+    font-weight: normal;
+    font-size: $font-size-11;
+  }
+
+  &:after {
+    content: '%';
+  }
+
+  // Queen bee styles
+  &.bee-queen {
+    width: 150px;
+    height: 150px;
+    line-height: 290px;
+    background: {
+      image: image-url('bee-queen.png');
+      size: 150px auto;
+    }
+  }
+
+  // Worker bee styles
+  &.bee-worker {
+    width: 90px;
+    height: 95px;
+    line-height: 180px;
+    background: {
+      image: image-url('bee-worker.png');
+      repeat: no-repeat;
+      position: 0 0;
+      size: 90px auto;
+    }
+  }
+
+  // Drone bee styles
+  &.bee-drone {
+    width: 80px;
+    height: 70px;
+    line-height: 115px;
+    background: {
+      size: 55px auto;
+    }
+  }
+
+  // Dead bee styles
+  &.dead-bee {
+    font-size: 0;
+
+    background: {
+      image: image-url('dead-sign.png');
+      repeat: no-repeat;
+      position: 50% 50%;
+      size: 95%;
+    }
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.hit {
+  @include swing();
+}
+
+// Sidebar with live bees counter, action button, short game map info
+aside {
+  float: right;
+  width: 246px;
+
+  h1,
+  h3 {
+    display: inline-block;
+    line-height: normal;
+    margin: 0 0 30px;
+  }
+
+  h1 {
+    color: $white;
+    @include text-shadow(rgba($cocoa-bean, 1) 0px 0px 10px);
+  }
+}
+
+// Hit action button
+.btn-hit {
+  display: block;
+  width: 100%;
+  border: 1px solid #e65f44;
+  background-color: #f0c911;
+  cursor: pointer;
+  color: $milano-red;
+  font-size: $font-size-32;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 30px 0;
+  @include border-radius(6px);
+  @include box-shadow((#f9eca0) 0px 1px 0px 0px inset);
+  @include background-image(linear-gradient(top, rgba(240,201,17,1) 5%,rgba(242,171,30,1) 100%));
+  @include text-shadow((#ded17c) 0px 1px 0px);
+
+  &:hover {
+    @include background-image(linear-gradient(top,  rgba(242,171,30,1) 5%,rgba(240,201,17,1) 100%));
+  }
+}
+
+// Game map info block list
+ul.game-map {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0;
+
+  li {
+    color: $white;
+    font-size: $font-size-24;
+    padding: 0 0 10px;
+  }
+
+  .bee-map {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-size: 100%;
+    vertical-align: middle;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}

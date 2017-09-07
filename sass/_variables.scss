@@ -1,0 +1,29 @@
+// Main color vars
+$cocoa-bean:     #572323;
+$deep-sea:       #008461;
+$turquoise:      #3FF3E9;
+$mine-shaft:     #343434;
+$milano-red:     #C92200;
+
+// Base settings
+$base-color:     $cocoa-bean;
+
+// Default color vars
+$black:          #000;
+$white:          #FFF;
+$yellow:         #FF0;
+
+// Typography
+$font-family-arial: Arial, Helvetica, sans-serif;
+
+// Base font size
+$font-size-base:  16px;
+
+// Custom font sizes
+$font-size-48:    ceil(($font-size-base * 3));
+$font-size-36:    ceil(($font-size-base * 2.25));
+$font-size-32:    ceil(($font-size-base * 2));
+$font-size-24:    ceil(($font-size-base * 1.5));
+$font-size-18:    ceil(($font-size-base * 1.125));
+$font-size-14:    ceil(($font-size-base * 0.875));
+$font-size-11:    ceil(($font-size-base * 0.688));

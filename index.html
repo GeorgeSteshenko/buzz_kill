@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buzz Kill</title>
+  <!-- Main styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Animate helper lib -->
+  <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<!-- Playing area -->
+<div class="play-ground">
+  <!-- Main action block -->
+  <div class="play-screen">
+    <div class="wrapper">
+      <div class="bee bee-queen" data-health="" data-defence=""></div>
+    </div>
+    <div class="wrapper">
+      <div class="bee bee-worker" data-health="" data-defence=""></div>
+      <div class="bee bee-worker" data-health="" data-defence=""></div>
+    </div>
+    <div class="wrapper">
+      <div class="bee bee-worker" data-health="" data-defence=""></div>
+      <div class="bee bee-worker" data-health="" data-defence=""></div>
+      <div class="bee bee-worker" data-health="" data-defence=""></div>
+    </div>
+    <div class="wrapper">
+      <div class="bee bee-drone" data-health="" data-defence=""></div>
+      <div class="bee bee-drone" data-health="" data-defence=""></div>
+      <div class="bee bee-drone" data-health="" data-defence=""></div>
+      <div class="bee bee-drone" data-health="" data-defence=""></div>
+    </div>
+    <div class="wrapper">
+      <div class="bee bee-drone" data-health="" data-defence=""></div>
+      <div class="bee bee-drone" data-health="" data-defence=""></div>
+      <div class="bee bee-drone" data-health="" data-defence=""></div>
+      <div class="bee bee-drone" data-health="" data-defence=""></div>
+    </div>
+  </div>
+  <!-- Main action frame end -->
+
+  <!-- Sidebar with live bees counter, action button, short game map info -->
+  <aside>
+    <!-- Live bees counter -->
+    <div class="bee-count"><h3>Bees left alive: </h3><h1></h1></div>
+    <!-- Hit action button -->
+    <button class="btn-hit">Hit the bee</button>
+    <!-- Map of the game -->
+    <ul class="game-map">
+      <li><span class="bee-map bee-queen"></span> - Queen bee</li>
+      <li><span class="bee-map bee-worker"></span> - Worker bee</li>
+      <li><span class="bee-map"></span> - Drone bee</li>
+      <li><span class="bee-map dead-bee"></span> - Dead bee</li>
+    </ul>
+    <!-- Map end -->
+  </aside>
+  <!-- Sidebar end -->
+</div>
+<!-- Playing are end -->
+
+<!-- Copyright footer info -->
+<p>Buzz Kill version 0.1. &copy; Yegor Steshenko 2016<br/> Bees are bros. Wasps not bros. Love bees. Peace.</p>
+
+<!-- Main script, jQuery lib -->
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

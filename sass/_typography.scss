@@ -1,0 +1,85 @@
+/**
+ * $BASE-TYPOGRAPHY
+ */
+html {
+  font-family: $font-family-arial;
+  font-size: $font-size-base;
+  color: $base-color;
+}
+
+/**
+ * $LINKS
+ */
+a {
+  //color: $mine-shaft;
+  text-decoration: underline;
+
+  &:hover {
+    //color: $branding-red;
+  }
+}
+
+/**
+ * $HEADINGS
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-arial;
+}
+
+h1, 
+.alpha {
+  font-size: $font-size-48;
+}
+
+h2,
+.beta {
+  font-size: $font-size-36;
+}
+
+h3,
+.gamma {
+  font-size: $font-size-24;
+}
+
+h4,
+.delta {
+  font-size: $font-size-18;
+}
+
+h5,
+.epsilon {
+  font-size: $font-size-base;
+}
+
+h6,
+.zeta {
+  font-size: $font-size-14;
+}
+
+
+/**
+ * $PARAGRAPHS
+ */
+p {
+  margin: 0 0 1em;
+}
+
+/**
+ * $QUOTES
+ */
+blockquote {
+  padding: 0 1.5em;
+  font-style: italic;
+}
+blockquote p {
+  margin: 0;
+}
+
+q {
+  font-style: italic;
+}
