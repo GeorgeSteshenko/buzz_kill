@@ -1,5 +1,6 @@
 # Buzz Kill
 JS one button short minigame
+Link: https://georgesteshenko.github.io/buzz_kill/
 
 ## Objective:
 
